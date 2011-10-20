@@ -1,0 +1,39 @@
+/* CSS file */
+@namespace "library://ns.adobe.com/flex/spark";
+
+global {
+    color:     #131f95;
+    font-size: 12;
+    disabled-color: #a63f50;
+    disabled-icon-color: #a63f50;
+}
+
+.h1 {
+    font-size: 24;
+}
+
+Application {
+    background-color: #f9ebe8;
+    horizontal-align: left;
+}
+
+Panel {
+    chrome-color: #e9d3d5;
+    border-alpha: 0.4;
+    background-alpha: 0.4;
+    background-color: #f9ebe8;
+}
+
+Button {
+    color: #116d40;
+    corner-radius: 0;
+    chrome-color: #cbdccb;
+}
+
+TextArea {
+    padding-left: 6;
+    padding-right: 6;
+    padding-top: 6;
+    padding-bottom: 6;
+}
+

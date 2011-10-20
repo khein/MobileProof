@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ViewNavigatorApplication xmlns:fx="http://ns.adobe.com/mxml/2009" 
+							xmlns:s="library://ns.adobe.com/flex/spark" 
+							xmlns:hw="org.spicefactory.parsley.sample.helloworld.*"
+							xmlns:parsley="http://www.spicefactory.org/parsley"
+							firstView="views.HelloWorldHomeView" 
+							applicationDPI="160">
+
+	<!-- use standard style -->
+	<fx:Style source="styles.css"/>
+
+	<fx:Declarations>
+		<!-- create HelloWorldContext -->
+		<parsley:ContextBuilder config="HelloWorldContext" />
+		
+	</fx:Declarations>	
+	
+	
+</s:ViewNavigatorApplication>

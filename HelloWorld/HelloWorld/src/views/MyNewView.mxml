@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:sf="http://www.spicefactory.org/parsley"		
+		title="MyNewView">
+	
+	<fx:Declarations>
+		<sf:Configure/>  <!-- Parsley Participater -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import uniworks.SendModel;
+			
+			[Inject]
+			[Bindable]public var model:SendModel;	
+		]]>
+	</fx:Script>
+	
+	<s:VGroup width="100%" height="100%" horizontalAlign="center" verticalAlign="middle">
+		<s:Label text="Success!"/>
+		<s:Button label="Next" click="navigator.pushView(ThirdView)" styleName="back"/>
+		<s:Button label="Back" click="navigator.popView()" styleName="back"/>
+		<!--
+		<s:Button label="Send Msg" click="model.sayHello()" />
+		<s:Label text="{model.sharedModel.slogan}"/>
+		-->
+	</s:VGroup>
+	
+</s:View>
